@@ -14,7 +14,7 @@
   "dependencies": {
     "@fastify/accepts": "^5.0.2",
     "event-emitter-promisify": "^1.1.0",
-    "fastify": "^5.2.0",
+    "fastify": "^5.3.1",
     "jsonld-streaming-parser": "^4.0.1",
     "jsonld-streaming-serializer": "^3.0.1",
     "minimist": "^1.2.8",
