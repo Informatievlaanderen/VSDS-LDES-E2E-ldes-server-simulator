@@ -1,5 +1,13 @@
 # LDES Server Simulator
 
+> ⚠️ **Warning!**
+>
+> **This page has been archived. All documentation, source code, Docker images, and release information for the LDES software have been moved to the open-source project at [openldes.org](https://openldes.org).**
+>
+> **This page was originally created for the completed VSDS project, funded under the European Recovery and Resilience Facility (RRF) as part of NextGenerationEU and aligned with EU digital transformation strategies.**
+>
+> You can find the new source code at: https://github.com/orgs/OpenLDES/repositories 
+
 It is not very practical to test the LDES client with an actual LDES server as typically the [LDES data set](https://semiceu.github.io/LinkedDataEventStreams/) will be too large to be used in automated (end-to-end) testing. For example, the [beta GIPOD LDES server](https://private-api.gipod.beta-vlaanderen.be/api/v1/ldes/mobility-hindrances) contains more than 650.000 LDES members in 2.600 fragments and it takes about an hour to retrieve them.
 
 This project implements a very small and basic LDES server (no support for accept headers, etc.) that allows to dynamically serve a number of fragment pages of your choice. The idea is that you POST a set of LDES fragments to the simulator, optionally set some redirects (to allow getting a specific fragment easier, e.g. the first or last) and then retrieve fragments using an LDES client from the simulator.
